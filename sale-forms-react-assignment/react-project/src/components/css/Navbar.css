@@ -1,0 +1,101 @@
+.navbar .container-fluid{
+    background: #0d6efd;
+    min-height: 3rem;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.navbar-toggler-icon{
+    /* ! got this from https://www.codeply.com/go/4FdZGlPMNV */
+    /* ! tweaked the rgb value to get white color in the navbar-toggler */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar{
+    transition: 0.3s linear all;
+}
+.navbar-toggle{
+    padding:0;
+}
+
+.navbar-toggler:focus{
+    color:#0d6efd;
+}
+
+.nav-item{
+    display:flex;
+    text-transform: uppercase;
+}
+.nav-link, .nav-link.disabled{
+    
+    color:aliceblue;
+}
+.nav-link:hover,.nav-link.disabled:hover{
+    color:aliceblue;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+}
+
+.navbar-brand:focus{
+    color:white;
+}
+.navbar-brand:hover{
+    color:white;
+}
+
+.navbar{
+    padding:0;
+}
+
+.navbar-nav{
+    width:70%;
+    justify-content: space-between;
+    /* ! this will align the items on the left side */
+    align-items: flex-start;
+
+}
+
+ul.navbar-nav{
+    /* ! once the screen size is 992px(big enough) then increase the font size also */
+    font-size: 80%;
+    text-align: center;
+    /* ! increase the gap between flex-items */
+    /* gap:0.5rem; */
+}
+
+
+
+.nav-link.active{
+    color:white !important; 
+    font-weight: bold;
+}
+
+@media(min-width:768px){
+    .navbar-nav{
+        background: #0d6efd;
+        width:100%;
+    }
+    ul.navbar-nav{
+        /* ! once the screen size is 992px(big enough) then increase the font size also */
+        font-size: 0.8rem;
+        /* ! increase the gap between flex-items */
+        /* gap:0.5rem; */
+    }
+}
+
+@media(min-width:992px){
+    .navbar-nav{
+        margin:0 0.5%;
+    }
+
+    ul.navbar-nav{
+        /* ! once the screen size is 992px(big enough) then increase the font size also */
+        font-size: 1rem;
+        /* ! increase the gap between flex-items */
+        gap:0.5rem;
+    }
+}

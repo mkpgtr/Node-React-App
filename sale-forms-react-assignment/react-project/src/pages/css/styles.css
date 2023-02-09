@@ -1,0 +1,43 @@
+
+.content-container{
+    width:50% !important;
+    margin:5rem auto;
+    
+}
+.content-container{
+    font-family: 'Poppins',sans-serif !important;
+  }
+
+
+
+th,td{
+    font-size: 1.3rem;
+    /* ! aligned the text to center because it was looking odd */
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .content-container{
+        width: 80% !important;
+        margin:5rem auto;
+    }
+}
+
+@media (min-width:992px){
+
+    .content-container{
+        width:50% !important;
+        margin:6rem auto;
+        
+    }
+
+    th,td{
+        font-size: 1.3rem;
+        /* ! aligned the text to center because it was looking odd */
+        text-align: center;
+    }
+
+
+    
+
+}
